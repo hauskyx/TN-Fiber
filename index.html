@@ -1,0 +1,242 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400..900&family=Google+Sans+Code:ital,wght@0,300..800;1,300..800&family=Inconsolata:wght@200..900&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.0/css/all.min.css" integrity="sha512-9xKTRVabjVeZmc+GUW8GgSmcREDunMM+Dt/GrzchfN8tkwHizc5RP4Ok/MXFFy5rIjJjzhndFScTceq5e6GvVQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <!-- Tailwind -->
+    <link rel="stylesheet" href="./output.css">
+
+    <title>TN Fiber</title>
+</head>
+<body>
+    <header>
+        <nav>
+            <div class="navbar flex justify-center md:justify-between items-center h-24 fixed top-0 min-w-full z-50">
+                <div class="logo">
+                    <div class="logo-img flex items-center gap-4" onclick="location.href='#'">
+                        <img src="images/tnfiber.png"
+                             alt="TN Fiber"
+                             class="cursor-pointer">
+
+                            <div class="tnfiber-mobile flex w-full text-xl font-bold">
+                                <h2><span>TN</span> Fiber</h2>
+                            </div>
+                             
+                        <div class="logo-text flex flex-col gap-2 invisible md:visible font-semibold text-white">
+                            <h2><span>TN</span> Fiber</h2>
+                            <span>A gente tem o que você precisa!</span>
+                        </div>
+                    </div>
+                </div>
+
+                
+
+                    <div class="nav-options hidden md:flex items-center gap-10 font-semibold">
+                        <a href="#plans">Planos</a>
+                        <a href="#about">Sobre a gente</a>
+                        <a href="#contact">Contato</a>
+                    </div>
+
+                    <div class="contract hidden md:flex">
+                        <button>
+                            Contratar
+                        </button>
+                    </div>
+
+                    <!-- <div class=" burguer">
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                    </div> -->
+
+                    <button class="flex md:hidden text-3xl" id="hamburguer">
+                        ☰
+                    </button>
+                    
+                    <!-- <div class="hidden nav-options flex items-center gap-10 font-semibold">
+                        <a href="#plans">Planos</a>
+                        <a href="#about">Sobre a gente</a>
+                        <a href="#contact">Contato</a>
+                    </div> -->
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <main>
+        <div class="fibra-optica grid grid-cols-1 w-full md:grid-cols-2 gap-12">
+            <div class="fibra-optica-C1 flex flex-col gap-4 w-full">
+                <span class="span-one m-auto md:m-0 w-fit">Fibra Óptica</span>
+                <h1 class="text-center md:text-left text-xs md:text-2xl">Internet ultrarrápida para a sua casa!</h1>
+                <p class="flex justify-center md:justify-start text-center md:text-left w-full md:w-4/5">Planos com latência baixa, instalação rápida e suporte 24/7. Faça streaming, jogue e trabalhe sem travamentos.</p>
+
+                <div class="fibra-optica-buttons flex justify-center md:justify-start gap-4 mt-4">
+                    <button class="text-xs md:text-lg button-one text-black bg-yellow-500">
+                        Ver Planos
+                    </button>
+
+                    <button class="text-xs md:text-lg button-two text-black bg-yellow-500">
+                        Fale com um especialista
+                    </button>
+                </div>
+
+                <div class="vantages grid grid-cols-2 gap-4 md:gap-4 w-full md:w-9/12">
+                    <div class="flex flex-col gap-1 text-xs md:text-sm">
+                        <span>Instalação</span>
+                        <p>Grátis e rápida</p>
+                    </div>
+
+                    <div class="flex flex-col gap-1 text-xs md:text-sm">
+                        <span>Suporte</span>
+                        <p>Whatsapp e telefone</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="fibra-optica-C2 flex items-center">
+                <div class="fibra-optica-C2-plan flex flex-row md:justify-between items-center w-full bg-neutral-900 text-yellow-500 cursor-default shadow-sm shadow-neutral-900">
+
+                    <div class="flex flex-col gap-4 w-full text-lg">
+                        <h3 class="text-sm md:text-lg">Velocidade média</h3>
+                        <span class="text-5xl md:text-5xl font-bold">500 Mbps</span>
+                        <p class="text-sm md:text-lg">Ping médio: <span class="font-bold">12 ms</span></p>
+                    </div>
+
+                    <div class="flex justify-end">
+                        <img
+                        src="images/tnfiber.png"
+                        alt="TN Fiber"
+                        class="w-9/12 md:w-2/4">
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <section>
+        <div class="planos w-full flex flex-col justify-center items-center gap-6" id="plans">
+            <div class="escolha-planos flex flex-col justify-start gap-1 w-full">
+                <h2 class="text-center md:text-left text-2xl font-bold">Escolha seu plano</h2>
+                <p class="text-center md:text-left text-gray-600">Planos mensais sem surpresas</p>
+            </div>
+    
+            <div class="plans-grid grid grid-cols-1 md:grid-cols-3 gap-6 w-full">
+    
+                <div class="plan-one flex flex-col gap-4 p-4 rounded-xl bg-neutral-100 shadow-sm shadow-neutral-400 transition duration-300">
+                    <span class="font-bold w-fit py-1.5 px-4 bg-yellow-500 rounded-xl">Essencial</span>
+                    <h3 class="font-bold">100 Mbps</h3>
+                    <h4 class="text-3xl text-yellow-500 font-bold">R$ 79/mês</h4>
+    
+                    <p>✔ Navegação e streaming</p>
+                    <p>✔ Instalação grátis</p>
+                    <p>✔ Suporte 24/7</p>
+    
+                    <button class="w-2/4 bg-black text-white font-bold m-auto my-2 md:m-auto p-1.5 rounded-xl cursor-pointer transition duration-300">Contratar</button>
+                </div>
+    
+                <div class="plan-one flex flex-col gap-4 p-4 border border-yellow-500 rounded-xl bg-neutral-100 shadow-sm shadow-neutral-400 transition duration-300">
+                    <span class="font-bold w-fit py-1.5 px-4 bg-yellow-500 rounded-xl">Popular</span>
+                    <h3 class="font-bold">300 Mbps</h3>
+                    <h4 class="text-3xl text-yellow-500 font-bold">R$ 119/mês</h4>
+    
+                    <p>✔ Streaming 4K / Multidispositivos</p>
+                    <p>✔ Roteador Wi-Fi incluso</p>
+                    <p>✔ Suporte prioritário</p>
+    
+                    <button class="w-2/4 bg-black text-white font-bold m-auto my-2 md:m-auto p-1.5 rounded-xl cursor-pointer transition duration-300">Contratar</button>
+                </div>
+    
+    
+                <div class="plan-one flex flex-col gap-4 p-4 rounded-xl bg-neutral-100 shadow-sm shadow-neutral-400 transition duration-300">
+                    <span class="font-bold w-fit py-1.5 px-4 bg-yellow-500 rounded-xl">Power</span>
+                    <h3 class="font-bold">1 Gbps</h3>
+                    <h4 class="text-3xl text-yellow-500 font-bold">R$ 199/mês</h4>
+    
+                    <p>✔ Ideal para empresas e gamers</p>
+                    <p>✔ Link dedicado opcional</p>
+                    <p>✔ SLA estendido</p>
+    
+                    <button class="w-2/4 bg-black text-white font-bold m-auto my-2 md:m-auto p-1.5 rounded-xl cursor-pointer transition duration-300">Contratar</button>
+                </div>
+            </div>
+        </div>
+
+        <div class="justify" id="about">
+            <div class="about flex justify-center items-center flex-col gap-6 my-48 m-auto">
+                <h2 class="text-center font-bold text-3xl">Por que escolher a <span class="text-yellow-500">TN Fiber</span>?</h2>
+                <p class="text-center">Na TN Fiber, a sua conexão vai além da internet. Entregamos velocidade real, com estabilidade até nos horários de pico, para que você possa trabalhar, estudar, assistir e jogar sem interrupções. Nosso atendimento é rápido, humano e próximo de você, garantindo suporte sempre que precisar. Escolha quem realmente se importa com a sua experiência e conecta você ao que mais importa!</p>
+            </div>
+        </div>
+
+        <div class="contact max-w-full" id="contact">
+            <div class="contact-grid grid grid-cols-1 md:grid-cols-2 bg-neutral-100 rounded-2xl shadow-sm shadow-neutral-400">
+
+                <div class="c-grid-one flex flex-col gap-4 py-10 md:py-24 px-4">
+                    <h2 class="font-bold text-2xl">Fale com a <span class="text-yellow-500">TN Fiber</span></h2>
+                    <p class="w-3/4">Preencha o formulário e um de nossos atendentes entrará em contato.</p>
+                    <span class="font-semibold"> <i class="fa-brands fa-whatsapp pr-1 text-yellow-500"></i> Whatsapp: (00) 00000 0000</span>
+                    <span class="font-semibold"> <i class="fa-solid fa-phone pr-1 text-yellow-500"></i> Telefone: 0800 000 000</span>
+                </div>
+
+                <div class="c-grid-two flex justify-center flex-col gap-6 px-4 md:px-4">
+                    <div class="input-one flex flex-col md:flex-row gap-4 pr-0 md:pr4">
+                        <input 
+                            type="text" 
+                            placeholder="Nome completo" 
+                            maxlength="50"
+                            class="w-full shadow-sm shadow-neutral-300 rounded-sm py-1.5 px-3 bg-white outline-none placeholder:text-gray-500 placeholder:text-sm text-yellow-500">
+
+                        <input
+                            type="text" 
+                            placeholder="Telefone ou Whatsapp" 
+                            maxlength="15"
+                            class="w-full shadow-sm shadow-neutral-300 rounded-sm py-1.5 px-3 m-0 bg-white outline-none placeholder:text-gray-500 placeholder:text-sm text-yellow-500">
+                    </div>
+
+                    <div class="input-one flex flex-col md:flex-row gap-4 pr-0 md:pr-4">
+                        <input
+                            type="text"
+                            placeholder="Seu e-mail"
+                            class="w-full md:w-9/12 shadow-sm shadow-neutral-300 rounded-sm py-1.5 px-3 bg-white outline-none placeholder:text-gray-500 placeholder:text-sm text-yellow-500">
+
+                        <select class="w-3/6 md:w-1/4 rounded-sm m-auto p-1.5 bg-yellow-500 font-semibold outline-none">
+                            <option hidden>Selecione</option>
+                            <option>Interesse: 100 Mbps</option>
+                            <option>Interesse: 300 Mbps</option>
+                            <option>Interesse: 1 Gbps</option>
+                        </select>
+                    </div>
+
+                    <div class="msg flex flex-col gap-6 pr-0 md:pr-0">
+                        <textarea
+                            placeholder="Mensagem (opcional)"
+                            class="min-w-full shadow-sm shadow-neutral-300 rounded-sm bg-white p-4  outline-none placeholder:text-gray-600 placeholder:text-sm text-yellow-500"></textarea>
+
+                        <button 
+                            type="submit"
+                            class="bg-black text-white font-bold w-full md:mb-3 m-auto mb-8 p-2 rounded-sm hover:bg-yellow-500 hover:text-black cursor-pointer transition-all duration-300">
+                                Solicitar contato
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <div class="flex justify-center p-8 mt-20 border-t border-neutral-300">
+            <span class="text-sm">&copy; <span class="tn-footer font-bold text-yellow-500 cursor-pointer" onclick="location.href='#'">TN Fiber</span> 2025. Todos os direitos reservados.</span>
+        </div>
+    </footer>
+</body>
+</html>
