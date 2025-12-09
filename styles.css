@@ -98,6 +98,10 @@ body {
     color: var(--tn-fiber);
 }
 
+.tnfiber-mobile h2, .tnfiber-mobile span {
+    color: var(--tn-fiber);
+}
+
 .nav-options a::after {
     content: '';
     position: absolute;
